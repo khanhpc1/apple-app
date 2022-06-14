@@ -1,0 +1,22 @@
+.global-nav {
+  background-color: rgba(0, 0, 0, 0.92);
+  width: 100%;
+  height: 44px;
+}
+.global-nav__content {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 2.2rem;
+}
+.global-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.global-nav__item__link {
+  color: #fff;
+}
+.global-nav__item--apple-icon {
+  width: 1.4rem;
+}
+
+/*# sourceMappingURL=header-style.css.map */
