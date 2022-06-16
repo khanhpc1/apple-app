@@ -1,22 +1,126 @@
 .global-nav {
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 44px;
 }
+@media screen and (max-width: 833px) {
+  .global-nav {
+    height: 48px;
+  }
+}
 .global-nav__content {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1024px;
   padding: 0 2.2rem;
+}
+.global-nav--mobile__list {
+  height: 4.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.global-nav--mobile__item--apple-icon {
+  height: 4.8rem;
+  opacity: 0.8;
+}
+.global-nav--mobile__item--apple-icon:hover {
+  opacity: 1;
+}
+.global-nav--mobile__item__link img {
+  height: 48px;
 }
 .global-nav__list {
   display: flex;
   justify-content: space-between;
+  margin: 0 -0.8px;
+}
+@media screen and (max-width: 833px) {
+  .global-nav__list {
+    display: none;
+  }
+}
+.global-nav__item {
+  margin: auto 0;
+  max-height: 44px;
 }
 .global-nav__item__link {
   color: #fff;
+  padding: 0 0.8rem;
 }
-.global-nav__item--apple-icon {
+.global-nav__item__link__text {
+  font-size: 1.2rem;
+  color: #F5F5F7;
+  opacity: 0.8;
+  line-height: 3.6667;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.global-nav__item__link__text:hover, .global-nav__item__link__text :active {
+  opacity: 1;
+}
+.global-nav__item img {
+  display: inline;
+  opacity: 0.8;
+}
+.global-nav__item img:hover, .global-nav__item img :active {
+  opacity: 1;
+}
+
+.bag-badge {
+  position: relative;
+  top: -1.4rem;
+  right: 2.1rem;
+  background-color: #F5F5F7;
+  opacity: 0.8;
+  border-radius: 50%;
   width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.bag-badge:hover, .bag-badge :active {
+  opacity: 1;
+}
+.bag-badge::before {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 100%;
+}
+.bag-badge__number {
+  display: block;
+}
+@media screen and (max-width: 833px) {
+  .bag-badge {
+    top: -2.7rem;
+    right: -0.4rem;
+  }
+}
+
+.gn-menu-icon__bread__crust {
+  display: block;
+  background: #fff;
+  width: 16px;
+  height: 1px;
+  position: absolute;
+  top: 2.3rem;
+}
+.gn-menu-icon__bread__crust--top {
+  transform: translateY(-0.3rem);
+}
+.gn-menu-icon__bread__crust--bottom {
+  transform: translateY(0.3rem);
+}
+
+.gn-mobile {
+  display: none;
+}
+@media screen and (max-width: 833px) {
+  .gn-mobile {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=header-style.css.map */
